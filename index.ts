@@ -1,5 +1,3 @@
-import { fetch } from "bun";
-
 async function getSong() {
     try {
         const response = await fetch(`${process.env.HA_API_URL}/states/${process.env.HA_ENTITY_ID}`, {
